@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Father_1 = require("./Father");
+var Child_1 = require("./Child");
+var Grandchild_1 = require("./Grandchild");
+var father = new Father_1.Father('Jose', 'branco');
+var child = new Child_1.Child('Roberto', 'pardo', 1.62);
+var grandChild = new Grandchild_1.Grandchild('Junior', 'pardo', 1.59, 60);
+father.walk();
+grandChild.walk();
+console.log("Nome do pai: ".concat(father._name, ".\nNome do filho: ").concat(child._name, ".\nNome do neto: ").concat(grandChild._name, "."));
+console.log("Altura do neto: ".concat(grandChild.height, "."));
+grandChild.study();
+grandChild.walk();

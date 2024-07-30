@@ -1,0 +1,54 @@
+<<<<<<< HEAD
+// It's possible to do an optional variable using the "?" signal:
+
+ function phrase(name?: string) {
+     console.log('Hello,', name || 'world');
+ }
+ phrase('Rogerio');
+
+//  Example of a function to apply discount:
+ function applyDiscount(price: number, discount: number = 0.05): number {
+     return price * (1 - discount);
+ }
+
+ console.log(applyDiscount(5));
+
+ *Object declaration*
+  javaScript:
+ let person {
+     name = "Roger",
+    age = 18
+}
+
+  typeScript:
+  let person(name: string, age: number) {
+  name: 'Roger';
+  age: 18
+=======
+// It's possible to do an optional variable using the "?" signal:
+
+ function phrase(name?: string) {
+     console.log('Hello,', name || 'world');
+ }
+ phrase('Rogerio');
+
+//  Example of a function to apply discount:
+ function applyDiscount(price: number, discount: number = 0.05): number {
+     return price * (1 - discount);
+ }
+
+ console.log(applyDiscount(5));
+
+ *Object declaration*
+  javaScript:
+ let person {
+     name = "Roger",
+    age = 18
+}
+
+  typeScript:
+  let person(name: string, age: number) {
+  name: 'Roger';
+  age: 18
+>>>>>>> 1ff6d13774dc46e7266b58706154a15f95555f13
+}
