@@ -1,7 +1,7 @@
-const rl = require('readline-sync');
+import * as rl from 'readline-sync';
 
-const randomNumber = Math.floor(Math.random() * 100) + 1;
-let guess;
+const randomNumber: number = Math.floor(Math.random() * 100) + 1;
+let guess: number;
 
 do {
     guess = rl.questionInt('Choose a number between 1 and 100: ');
